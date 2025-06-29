@@ -19,6 +19,6 @@ def send_email_notification(to_email, subject, body):
             smtp.starttls()
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             smtp.send_message(msg)
-            print(f"📧 Email sent to {to_email}")
+            print(f" Email sent to {to_email}")
     except Exception as e:
-        print(f"❌ Failed to send email: {e}")
+        print(f" Failed to send email: {e}")
