@@ -16,6 +16,8 @@ This is a Python Flask-based backend application that allows users to create, vi
 - Postman-compatible API
 
 ---
+## POSTMAN-COLLECTION
+https://kumarsahil-1217951.postman.co/workspace/kumar-sahil's-Workspace~963dd472-9808-43b7-8766-ce4f2af42c86/collection/44430466-ee445495-66b8-4651-a5f3-732031d8df62?action=share&creator=44430466
 
 ## 🛠️ Requirements
 
