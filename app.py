@@ -3,6 +3,7 @@ from models import Event
 from event_manager import EventManager
 from reminders import start_reminder_checker
 from dotenv import load_dotenv
+import os
 from datetime import datetime
 import threading
 
@@ -51,5 +52,9 @@ def search_events():
     results = manager.search(query)
     return jsonify([e.to_dict() for e in results])
 
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Render sets this PORT
+    app.run(host="0.0.0.0", port=port, debug=True)
+
